@@ -31,12 +31,15 @@ public class PlayerMovement : MonoBehaviour
     float SlideTimer = 0.0f;
     public float SlideCooldown = 1.0f;
 
+    public float HealthMax = 100.0f;
+    float healthCurr;
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        healthCurr = HealthMax;
     }
 
     // Update is called once per frame
@@ -149,6 +152,16 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("Just slided, slid? slode? " + slideVal);
 
         slideVal = 0.0f;
+    }
+
+    public void PlayerHit(int Damage)
+    {
+        healthCurr -= Damage;
+        Debug.Log("Hit for " + Damage + " " + healthCurr + " remaining");
+        if (healthCurr <= 0)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     private void OnCollisionStay(Collision collision)
