@@ -292,6 +292,7 @@ MonoBehaviour:
   isGrounded: 0
   isSliding: 0
   SlideCooldown: 1
+  HealthMax: 100
 --- !u!54 &514155031
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -711,7 +712,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1423089955
 Transform:
   m_ObjectHideFlags: 0
@@ -1054,6 +1055,8 @@ MonoBehaviour:
   enemDam: 20
   enemHP: 30
   playerRB: {fileID: 514155031}
+  playerMove: {fileID: 0}
+  yPos: 0
 --- !u!54 &2094013494
 Rigidbody:
   m_ObjectHideFlags: 0
