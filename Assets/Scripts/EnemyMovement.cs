@@ -14,7 +14,8 @@ public class EnemyMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        playerRB = GameObject.FindWithTag("Player").GetComponent<Rigidbody>();
+        playerMove = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame
