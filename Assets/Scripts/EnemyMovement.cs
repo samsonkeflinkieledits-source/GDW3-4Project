@@ -22,7 +22,8 @@ public class EnemyMovement : MonoBehaviour
     void FixedUpdate()
     {
         yPos = enemRB.gameObject.transform.position.y;
-        enemRB.gameObject.transform.position = Vector3.MoveTowards(enemRB.gameObject.transform.position, playerRB.gameObject.transform.position, enemSpeed);
+        Vector3 temp = Vector3.MoveTowards(enemRB.gameObject.transform.position, playerRB.gameObject.transform.position, enemSpeed);
+        enemRB.gameObject.transform.position = new Vector3(temp.x, yPos, temp.z);
         enemRB.transform.LookAt(new Vector3(playerRB.gameObject.transform.position.x, yPos, playerRB.gameObject.transform.position.z));
     }
 

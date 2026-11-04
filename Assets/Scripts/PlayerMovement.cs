@@ -103,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
             upVal = jumpSpeed;
         }
 
-        if (Keyboard.current.ctrlKey.isPressed && isSliding == false)
+        if (Keyboard.current.ctrlKey.isPressed && isSliding == false && isGrounded == true)
         {
             Sliding();
         }
@@ -111,6 +111,7 @@ public class PlayerMovement : MonoBehaviour
         if (SlideTimer >= SlideCooldown && isSliding == true)
         {
             isSliding = false;
+            cam.transform.localPosition = new Vector3(0, 0.5f, 0);
             Debug.Log("Slide Done");
             slideVal = 0;
         }
@@ -148,6 +149,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 dirfinal = dir * slideVal;
         rbPlayer.AddForce(dirfinal, ForceMode.Impulse);
         SlideTimer = 0.0f;
+        cam.transform.localPosition = new Vector3(0, 0.25f, 0);
         isSliding = true;
         Debug.Log("Just slided, slid? slode? " + slideVal);
 
