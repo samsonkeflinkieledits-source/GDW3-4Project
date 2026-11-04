@@ -560,6 +560,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -5066493223152278515, guid: c24523381c3e3d24d8cf0272395a8c59, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -21.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -5066493223152278515, guid: c24523381c3e3d24d8cf0272395a8c59, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.70710486
       objectReference: {fileID: 0}
@@ -583,17 +587,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.27
       objectReference: {fileID: 0}
-    - target: {fileID: -1960445115212642163, guid: c24523381c3e3d24d8cf0272395a8c59, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 18.9
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c24523381c3e3d24d8cf0272395a8c59, type: 3}
       propertyPath: m_Name
       value: Castle
-      objectReference: {fileID: 0}
-    - target: {fileID: 8668776012706815879, guid: c24523381c3e3d24d8cf0272395a8c59, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 18.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
