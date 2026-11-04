@@ -317,7 +317,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &757232885
 BoxCollider:
@@ -408,6 +408,7 @@ Transform:
   m_Children:
   - {fileID: 1152982209}
   - {fileID: 692258566}
+  - {fileID: 1578026653}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &757232889
@@ -430,6 +431,9 @@ MonoBehaviour:
   forwardVal: 0
   rightVal: 0
   jumpVal: 0
+  mouseSens: 1
+  playerBod: {fileID: 757232888}
+  camBod: {fileID: 1578026653}
 --- !u!1 &1152982208
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,11 +660,11 @@ Transform:
   m_GameObject: {fileID: 1578026650}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 757232888}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1578026654
 MonoBehaviour:
@@ -712,5 +716,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 154258004}
   - {fileID: 1391063762}
-  - {fileID: 1578026653}
   - {fileID: 757232888}
