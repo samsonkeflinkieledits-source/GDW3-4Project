@@ -1,4 +1,5 @@
 
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
@@ -11,12 +12,14 @@ public class EnemyMovement : MonoBehaviour
     public Rigidbody playerRB;
     public PlayerMovement playerMove;
     public float yPos = 0.0f;
+    public Material mat;
 
     // Start is called once before the first execution of Update
     void Start()
     {
         playerRB = GameObject.FindWithTag("Player").GetComponent<Rigidbody>();
         playerMove = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
+        mat = gameObject.GetComponent<Renderer>().material;
     }
 
     // Update is called once per frame
@@ -43,6 +46,7 @@ public class EnemyMovement : MonoBehaviour
     public void EnemyHit(int damage)
     {
         enemHP -= damage;
+        mat.SetFloat("_ShowDecal", 1.0f);
 
         Debug.Log("Enemy hit for " + damage +
                   " damage. Remaining HP: " + enemHP);

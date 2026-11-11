@@ -434,9 +434,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 433081960906353130, guid: 166fcd36ae35ddd418eeb927ce723bf4, type: 3}
+      propertyPath: enemSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 433081960906353130, guid: 166fcd36ae35ddd418eeb927ce723bf4, type: 3}
       propertyPath: playerMove
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3421707936485695007, guid: 166fcd36ae35ddd418eeb927ce723bf4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 608b75c9fc8d39d4397871f2357778db, type: 2}
     - target: {fileID: 6817602273002046462, guid: 166fcd36ae35ddd418eeb927ce723bf4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15
