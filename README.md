@@ -17,4 +17,4 @@ Then in the enemycode a material is defined at the start function and upon the e
 \
 The end result is that upon being hit the enemy shows a blood texture on them. The before hit and after hit visuals are seen below.\
 <img width="222" height="183" alt="Screenshot 2026-11-11 133330" src="https://github.com/user-attachments/assets/0c4dde69-af79-4606-a049-79adf5d128ec" />\
-<img width="133" height="160" alt="Screenshot 2026-11-11 133346" src="https://github.com/user-attachments/assets/61ba209d-3331-4cff-9e1c-c84e87840ba0" />\
+<img width="133" height="160" alt="Screenshot 2026-11-11 133346" src="https://github.com/user-attachments/assets/61ba209d-3331-4cff-9e1c-c84e87840ba0" />
