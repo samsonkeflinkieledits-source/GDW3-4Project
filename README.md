@@ -2,6 +2,8 @@
 \
 Created by: Charlie Burnham\
 \
+I thought this would be an interesting and potentially useful choice for my GDW game. I know a variety of single player FPS games use blood on your enemy as a natural indicator of the damage you've dealt (the first example I can think of is DOOM Eternal). Since my GDW is also an FPS game I figured having blood show on damaged enemies would be a useful addition. I added a base colour modifier to the shader so the colour of the enemy could be changed.\
+\
 This shader made during my computer graphics tutorial uses mask shaders to simulate blood or damage on an enemy. As you can see in the image below a basic bloodstain texture was made to be used for this shader. It was made in Krita.\
 <img width="1024" height="1024" alt="Bloodstain White" src="https://github.com/user-attachments/assets/edd2bf50-173c-4969-941a-ebd23cf09ff2" />\
 \
@@ -17,4 +19,6 @@ Then in the enemycode a material is defined at the start function and upon the e
 \
 The end result is that upon being hit the enemy shows a blood texture on them. The before hit and after hit visuals are seen below.\
 <img width="222" height="183" alt="Screenshot 2026-11-11 133330" src="https://github.com/user-attachments/assets/0c4dde69-af79-4606-a049-79adf5d128ec" />\
-<img width="133" height="160" alt="Screenshot 2026-11-11 133346" src="https://github.com/user-attachments/assets/61ba209d-3331-4cff-9e1c-c84e87840ba0" />
+<img width="133" height="160" alt="Screenshot 2026-11-11 133346" src="https://github.com/user-attachments/assets/61ba209d-3331-4cff-9e1c-c84e87840ba0" />\
+\
+I'd say this shader went pretty well, besides the fact I had to use a render node in place of the add node shown in the tutorial in order to prevent my blood texture from turning pink (thanks Lucas).\
