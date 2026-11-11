@@ -1,4 +1,4 @@
-# CG Tutorial work (creating a mask shader)\
+# CG Tutorial work (creating a mask shader)
 \
 Created by: Charlie Burnham\
 \
