@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public GameObject swingSwordAudio;
     public Rigidbody rbPlayer;
     public GameObject dirPos;
     public GameObject RPos;
@@ -53,6 +54,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            swingSwordAudio.GetComponent<AudioSource>().Play();
+        }
         SlideTimer += Time.deltaTime;
         attackTimer += Time.deltaTime;
 
