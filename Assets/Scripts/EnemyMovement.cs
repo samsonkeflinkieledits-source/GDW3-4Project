@@ -5,12 +5,14 @@ public class EnemyMovement : MonoBehaviour
 {
     public Rigidbody enemRB;
     public float enemSpeed = 1.0f;
+    public float enemJumpSpeed = 3.0f;
     public int enemDam = 20;
     public int enemHP = 30;
 
     public Rigidbody playerRB;
     public PlayerMovement playerMove;
     public float yPos = 0.0f;
+    public bool isGrounded = true;
 
     // Start is called once before the first execution of Update
     void Start()
@@ -54,6 +56,12 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
+    public void Jump()
+    {
+        enemRB.AddForce(0, enemJumpSpeed, 0, ForceMode.Impulse);
+        isGrounded = false;
+    }
+
     // Enemy damages player on contact
     private void OnCollisionEnter(Collision collision)
     {
@@ -61,6 +69,11 @@ public class EnemyMovement : MonoBehaviour
         {
             Debug.Log("Contacted Player");
             playerMove.PlayerHit(enemDam);
+        }
+
+        if (collision.gameObject.CompareTag("Floor"))
+        {
+            isGrounded = true;
         }
     }
 }
